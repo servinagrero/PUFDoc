@@ -1,0 +1,28 @@
+title: Pufdoc
+author: Sergio Vinagrero
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    html:
+      toc: true
+      theme: [yeti, custom.scss]
+
+    revealjs:
+      theme: [default, custom.scss]
+      citation-location: margin
+      embed-resources: true
+      smaller: true
+      center-title-slide: true
+      show-slide-number: all
+      slide-number: c/t
+
+    pdf:
+      documentclass: scrreprt
+      papersize: a4
+      fontsize: 12pt
+      classoption: ["oneside", "open=any"]
+      microtypeoptions: ["final"]
+      dpi: 300
+      fig-format: png
+
